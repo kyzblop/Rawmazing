@@ -1,0 +1,223 @@
+/* Hero */
+.hero {
+  background-color: var(--SignatureClaire);
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding-top: 20px;
+  padding-bottom: 40px;
+  gap: 10px;
+}
+
+.hero-content a {
+  font-size: 24px;
+}
+
+/* Qui suis-je ? */
+.perso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.perso img {
+  width: 30%;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perso-text {
+  align-items: start;
+}
+
+.perso_container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding: 0 5%;
+
+  width: 100%;
+  gap: 20px;
+}
+
+.perso_container a {
+  width: fit-content;
+  color: var(--Marron);
+  background-color: var(--SignatureClaire);
+  padding: 10px 15px;
+}
+
+.perso_container p {
+  color: var(--Marron);
+  text-align: justify;
+}
+
+/* Services */
+.services_apercu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--BeigeFonce);
+
+  padding: 30px 5%;
+  gap: 10px;
+}
+
+.card_group {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  width: 100%;
+}
+
+.card a {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.card {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  min-width: 0;
+
+  justify-content: center;
+
+  background-color: #faf2eb;
+  border-radius: 30px;
+
+  color: var(--Marron);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card img {
+  height: 50%;
+}
+
+/* Pourquoi prendre une doula ? */
+.doula {
+  display: flex;
+  flex-direction: column;
+}
+
+.doula_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px;
+  gap: 10px;
+
+  text-align: justify;
+
+  color: var(--Marron);
+}
+
+.doula img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .perso {
+    flex-direction: row;
+
+    gap: 20%;
+    padding: 100px 10%;
+  }
+
+  .perso img {
+    max-width: 350px;
+  }
+
+  .perso_container {
+    padding: 0;
+    gap: 30px;
+  }
+
+  .perso_container p {
+    color: var(--Marron);
+    text-align: justify;
+  }
+
+  .card a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    display: flex;
+    min-height: 600px;
+
+    background:
+      radial-gradient(
+        ellipse 50% 100% at right center,
+        transparent 100%,
+        var(--SignatureMid) 120%,
+        var(--SignatureClaire) 400%
+      ),
+      url("/images/Hero/Page_accueil.jpeg");
+
+    background-size:
+      100%,
+      auto 100%;
+
+    background-position:
+      center,
+      right center;
+    background-repeat: no-repeat;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero-content {
+    justify-content: center;
+
+    width: 40%;
+
+    padding: 80px;
+    gap: 50px;
+  }
+
+  .doula {
+    flex-direction: row;
+  }
+
+  .doula_content {
+    padding: 100px;
+  }
+
+  .doula img {
+    width: 50%;
+  }
+}

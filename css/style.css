@@ -1,0 +1,56 @@
+@import url("variables.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("page_accueil.css");
+
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: "Alice", serif;
+}
+
+h1 {
+  font-family: "Windsong", cursive;
+  font-size: 3.5rem;
+  font-weight: 500;
+
+  color: var(--Marron);
+}
+
+h2 {
+  font-family: "Windsong", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+
+  color: var(--Marron);
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  transition: 0.3s;
+}
+
+.btn {
+  background-color: var(--Vert);
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: var(--Beige);
+}
+
+main {
+  flex: 1;
+  background-color: var(--Beige);
+}
+
