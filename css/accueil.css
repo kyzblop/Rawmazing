@@ -52,7 +52,7 @@
 
   align-items: center;
 
-  padding: 0 5%;
+  padding: 0 30px;
 
   width: 100%;
   gap: 20px;
@@ -184,7 +184,7 @@
         var(--SignatureMid) 120%,
         var(--SignatureClaire) 400%
       ),
-      url("/images/Hero/Page_accueil.jpeg");
+      url("/images/Hero/Accompagnement_doula.jpeg");
 
     background-size:
       100%,

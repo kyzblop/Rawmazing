@@ -1,0 +1,117 @@
+.qui-suis-je {
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px 0;
+
+  align-items: center;
+  text-align: justify;
+
+  color: var(--Marron);
+}
+
+.qui-suis-je img {
+  width: 100%;
+}
+
+.portrait {
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 9999px 9999px 0 0;
+}
+
+.paragraphe-1,
+.paragraphe-2 {
+  padding: 30px;
+}
+
+.paragraphe-2 {
+  background-color: var(--BeigeFonce);
+}
+
+.avant-apres-mobile {
+  display: block;
+  padding: 30px;
+}
+
+.bandeau-avant-apres-desktop {
+  display: none;
+}
+
+.portrait-desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .qui-suis-je h1 {
+    align-self: flex-start;
+    padding-left: 50px;
+  }
+
+  .bandeau {
+    display: flex;
+    align-items: center;
+
+    min-height: 300px;
+    padding: 0 50px;
+
+    margin: 100px 0;
+    gap: 10%;
+
+    background-color: var(--BeigeFonce);
+    overflow: visible;
+  }
+
+  .bandeau img {
+    width: 100%;
+    display: block;
+    height: 130%;
+    margin-top: -15%;
+    margin-bottom: -15%;
+
+    object-fit: contain;
+  }
+
+  .bandeau-image {
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portrait {
+    display: none;
+  }
+
+  .portrait-desktop {
+    display: block;
+  }
+
+  .paragraphe-1,
+  .paragraphe-2 {
+    flex: 1.4;
+    padding: 30px 0;
+  }
+
+  .avant-apres-mobile {
+    display: none;
+  }
+
+  .bandeau-avant-apres-desktop {
+    display: flex;
+    width: 100%;
+    background-color: var(--BeigeFonce);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 0;
+  }
+
+  .bandeau-avant-apres-desktop img {
+    width: 60%;
+  }
+
+  .inverse {
+    flex-direction: row-reverse;
+  }
+}

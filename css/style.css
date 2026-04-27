@@ -1,7 +1,8 @@
 @import url("variables.css");
 @import url("header.css");
 @import url("footer.css");
-@import url("page_accueil.css");
+@import url("accueil.css");
+@import url("perso.css");
 
 
 /* Global */
