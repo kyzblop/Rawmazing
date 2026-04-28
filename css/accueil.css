@@ -58,13 +58,6 @@
   gap: 20px;
 }
 
-.perso_container a {
-  width: fit-content;
-  color: var(--Marron);
-  background-color: var(--SignatureClaire);
-  padding: 10px 15px;
-}
-
 .perso_container p {
   color: var(--Marron);
   text-align: justify;
@@ -94,10 +87,10 @@
 .card a {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
 
+  width: 100%;
   gap: 15px;
 }
 
