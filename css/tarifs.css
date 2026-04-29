@@ -1,4 +1,4 @@
-.services {
+.tarifs {
   display: flex;
   flex-direction: column;
 
@@ -8,44 +8,19 @@
   color: var(--Marron);
 }
 
-.services-hero {
-  position: relative;
+.tarifs-hero {
   width: 100%;
   max-height: 500px;
 }
 
-.services-hero img {
+.tarifs-hero img {
   width: 100%;
   max-height: 500px;
   object-fit: cover;
   display: block;
 }
 
-.services-hero-citation {
-  display: flex;
-  flex-direction: column;
-
-  width: 90%;
-  gap: 15px;
-  padding: 20px;
-  border-radius: 20px;
-
-  font-size: 16px;
-
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-
-  color: var(--Beige);
-  background-color: #7a5c5890;
-}
-
-.citation {
-  font-size: 32px;
-}
-
-.services-btn {
+.tarifs-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +30,7 @@
   padding: 20px 50px;
 }
 
-.services-btn-btn {
+.tarifs-btn-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +38,7 @@
   gap: 10px;
 }
 
-.section-services {
+.section-tarifs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +48,7 @@
   gap: 15px;
 }
 
-.services-card-group {
+.tarifs-card-group {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,12 +57,12 @@
   gap: 20px;
 }
 
-.services-card {
+.tarifs-card {
   position: relative;
   display: flex;
   flex-direction: column;
 
-  height: 450px;
+  height: 350px;
   width: 90%;
   max-width: 335px;
   padding: 20px;
@@ -99,7 +74,7 @@
   border-radius: 30px;
 }
 
-.services-card-head {
+.tarifs-card-head {
   display: flex;
   flex-direction: row;
 
@@ -109,11 +84,11 @@
   height: 120px;
 }
 
-.services-card-head img {
+.tarifs-card-head img {
   height: 120px;
 }
 
-.services-card-head-droite {
+.tarifs-card-head-droite {
   display: flex;
   flex-direction: column;
 
@@ -123,113 +98,85 @@
   gap: 5px;
 }
 
-.service-card-titre {
+.tarifs-card-titre {
   text-align: center;
   font-size: 18px;
   color: var(--Signature);
 }
 
-.services-card-head-time {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  gap: 10px;
-}
-
-.services-card ul {
-  list-style: disc;
-  padding-left: 20px;
+.tarifs-card ul {
+  list-style: none;
+  padding: 0 20px;
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
-.services-card ul.sans-puce {
-  list-style: none;
-  padding: 0 20px;
-}
-
-.services-card li {
+.tarifs-card li {
   text-align: start;
 }
 
-.services-card a {
-  position: absolute;
-  bottom: 8%;
-  left: 50%;
-  transform: translateX(-50%);
+.prix {
+  font-size: 32px;
 }
 
-.naturopathie {
-  background-color: var(--BeigeFonce);
-}
+/* La classe naturopathie est la même que dans services */
 
-.naturopathie .services-card {
+.naturopathie .tarifs-card {
   height: 315px;
   background-color: #fdf4ed;
 }
 
-.services-card-body {
-  padding: 0 20px;
-  text-align: start;
+.naturopathie li,
+.cycle-feminin li {
+  text-align: center;
 }
 
-.cycle-feminin .services-card {
+.cycle-feminin .tarifs-card {
   height: 315px;
 }
 
 @media (min-width: 1200px) {
-  .citation {
-    font-size: 48px;
-  }
-
-  .services-hero-citation {
-    font-size: 28px;
-    gap: 30px;
-  }
-
-  .services-btn {
+  .tarifs-btn {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .services-btn-btn {
+  .tarifs-btn-btn {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
-  .section-services {
+  .section-tarifs {
     align-items: flex-start;
     padding: 50px;
   }
 
-  .services-card-group {
+  .tarifs-card-group {
     flex-direction: row;
     justify-content: space-around;
   }
 
-  .services-card {
-    height: 550px;
+  .tarifs-card {
+    height: 450px;
     width: 430px;
   }
 
-  .services-card-head {
+  .tarifs-card-head {
     flex-direction: column;
 
     height: 190px;
     gap: 15px;
   }
 
-  .service-card-titre {
+  .tarifs-card-titre {
     font-size: 24px;
   }
 
-  .naturopathie .services-card,
-  .cycle-feminin .services-card {
+  .naturopathie .tarifs-card,
+  .cycle-feminin .tarifs-card {
     height: 350px;
   }
 }
