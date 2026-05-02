@@ -100,7 +100,7 @@
 
 .tarifs-card-titre {
   text-align: center;
-  font-size: 18px;
+  font-size: clamp(0.8rem, 5vw, 1.2rem);
   color: var(--Signature);
 }
 
@@ -115,10 +115,11 @@
 
 .tarifs-card li {
   text-align: start;
+  font-size: clamp(0.8rem, 3.8vw, 1rem);
 }
 
 .prix {
-  font-size: 32px;
+  font-size: clamp(1rem, 12vw, 1.5rem);
 }
 
 /* La classe naturopathie est la même que dans services */
@@ -169,10 +170,6 @@
 
     height: 190px;
     gap: 15px;
-  }
-
-  .tarifs-card-titre {
-    font-size: 24px;
   }
 
   .naturopathie .tarifs-card,

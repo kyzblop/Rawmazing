@@ -2,7 +2,7 @@
   background-color: var(--BeigeFonce);
   color: var(--Marron);
 
-  font-size: 16px;
+  font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
 .footer-container {

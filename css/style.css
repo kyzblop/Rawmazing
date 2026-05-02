@@ -29,7 +29,7 @@ body {
 
 h1 {
   font-family: "Windsong", cursive;
-  font-size: 3.5rem;
+  font-size: clamp(1rem, 10vw, 3rem);
   font-weight: 500;
 
   color: var(--Marron);
@@ -37,7 +37,7 @@ h1 {
 
 h2 {
   font-family: "Windsong", cursive;
-  font-size: 3rem;
+  font-size: clamp(1rem, 8vw, 2.5rem);
   font-weight: 400;
 
   color: var(--Marron);
@@ -45,7 +45,7 @@ h2 {
 
 h3 {
   font-family: "Italianno", cursive;
-  font-size: 3rem;
+  font-size: clamp(1rem, 10vw, 3rem);
   font-weight: 400;
 
   color: var(--Marron);
@@ -67,6 +67,8 @@ a {
   padding: 10px 15px;
   border-radius: 50px;
   color: var(--Beige);
+
+  font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 .btn-clair{
@@ -74,6 +76,8 @@ a {
   padding: 10px 15px;
   border-radius: 50px;
   color: var(--Marron);
+
+  font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 main {

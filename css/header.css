@@ -8,7 +8,7 @@
   background-color: var(--BeigeFonce);
 
   /* Font */
-  font-size: 18px;
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
   color: var(--Marron);
 }
 
