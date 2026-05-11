@@ -45,10 +45,21 @@
 
   font-size: 10cqh;
   cursor: pointer;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carrousel-btn.visible {
+  opacity: 1;
 }
 
 .next {
   right: 10px;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .actualites-container {

@@ -2,16 +2,16 @@
   {
     "date": "30 et 31 mai 2026",
     "message": "Venez me trouver au stand 23",
-    "image" : "/images/Actualites/salon_Cannes_la_bocca.png"
+    "image": "/images/Actualites/salon_Cannes_la_bocca.png"
   },
   {
     "date": "17 octobre 2026",
     "message": "Venez me trouver au stand 24",
-    "image" : "/images/Actualites/forum_allaitement.png"
+    "image": "/images/Actualites/forum_allaitement.png"
   },
   {
     "date": "17 octobre 2026",
     "message": "Venez me trouver au stand 24",
-    "image" : "/images/Actualites/forum_allaitement_programme.png"
+    "image": "/images/Actualites/forum_allaitement_programme.png"
   }
 ]
