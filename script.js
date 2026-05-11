@@ -1,5 +1,6 @@
 let index = 0;
 let actualites = [];
+const actualitesSection = document.getElementById('actualites-section');
 
 fetch("header.html")
   .then((res) => res.text())
@@ -29,24 +30,36 @@ fetch("actualites.json")
   });
 
 function afficherActualite(i) {
-  document.querySelector('.actualite-date').textContent = actualites[i].date;
-  document.querySelector('.actualite-message').textContent = actualites[i].message;
-  
   const img = document.querySelector('.actualite-image');
-  if (actualites[i].image) {
-    img.src = actualites[i].image;
-    img.style.display = 'block';
-  } else {
-    img.style.display = 'none';
-  }
+
+  img.classList.add('fade');
+
+  setTimeout(() => {
+    img.src = actualites[i].image || '';
+    document.querySelector('.actualite-date').textContent = actualites[i].date;
+    document.querySelector('.actualite-message').textContent = actualites[i].message;
+    img.classList.remove('fade');
+  }, 300);
 }
 
-document.querySelector(".prev").addEventListener("click", () => {
-  index = (index - 1 + actualites.length) % actualites.length;
-  afficherActualite(index);
-});
+if (actualitesSection) {
+  fetch("actualites.json")
+    .then((res) => res.json())
+    .then((data) => {
+      if (data.length > 0) {
+        actualites = data;
+        afficherActualite(index);
+        actualitesSection.classList.remove('hidden');
+      }
+    });
 
-document.querySelector(".next").addEventListener("click", () => {
-  index = (index + 1) % actualites.length;
-  afficherActualite(index);
-});
+  document.querySelector('.prev').addEventListener('click', () => {
+    index = (index - 1 + actualites.length) % actualites.length;
+    afficherActualite(index);
+  });
+
+  document.querySelector('.next').addEventListener('click', () => {
+    index = (index + 1) % actualites.length;
+    afficherActualite(index);
+  });
+}
