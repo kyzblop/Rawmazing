@@ -1,0 +1,39 @@
+.contact {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.coordonnees {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 50px;
+    gap: 10px;
+    color: var(--Marron);
+}
+
+.coordonnees a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    gap: 20px;
+}
+
+.contact-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+    padding-left: 50px;
+}
+
+@media (min-width: 768px) {
+    .contact-btn {
+        flex-direction: row;
+    }
+}
