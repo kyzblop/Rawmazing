@@ -167,17 +167,16 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .hero {
     display: flex;
     min-height: 600px;
 
     background:
       radial-gradient(
-        ellipse 50% 100% at right center,
-        transparent 100%,
-        var(--SignatureMid) 120%,
-        var(--SignatureClaire) 400%
+        ellipse 800px 100% at right center,
+        transparent 90%,
+        var(--SignatureClaire) 110%
       ),
       url("/images/Hero/Accompagnement_doula.jpeg");
 
@@ -214,17 +213,5 @@
 
   .doula img {
     width: 50%;
-  }
-}
-
-@media (min-width: 1500px) {
-  .hero {
-    display: flex;
-    min-height: 600px;
-    background-color: var(--SignatureMid);
-    background-image: url("/images/Hero/Accompagnement_doula.jpeg");
-    background-size: auto 100%;
-    background-position: right center;
-    background-repeat: no-repeat;
   }
 }
