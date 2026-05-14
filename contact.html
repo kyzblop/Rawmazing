@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -24,6 +25,31 @@
     <main class="contact">
       <section class="section-formulaire">
         <h1>Me contacter</h1>
+        <form class="formulaire" id="contact-form">
+          <div style="position: absolute; left: -9999px">
+            <input
+              type="text"
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
+          <input type="text" name="name" placeholder="Votre nom" required />
+          <input type="email" name="email" placeholder="Votre email" required />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Sujet du message"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Votre message"
+            required
+          ></textarea>
+          <button class="btn" type="submit" id="submit-btn">Envoyer</button>
+        </form>
+        <div class="toast" id="toast"></div>
       </section>
 
       <section class="section-coordonnes">

@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
 
-  padding: 50px 0px;
+  padding: 50px;
   align-items: center;
 
-  gap: 20px;
+  gap: 50px;
 }
 
 section {
@@ -15,11 +15,82 @@ section {
   width: 100%;
 }
 
+.section-formulaire,
+.section-coordonnes,
+.section-rdv {
+  gap: 20px;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  gap: 20px;
+}
+
+.formulaire input {
+  height: 50px;
+}
+
+.formulaire textarea {
+  height: 200px;
+}
+
+.formulaire input,
+.formulaire textarea {
+  border-radius: 10px;
+  border: none;
+
+  padding: 10px;
+  font-family: "Alice";
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
+  color: var(--Marron);
+}
+
+.formulaire .btn {
+  border: none;
+  border-radius: 10px;
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
+  width: fit-content;
+
+  align-self: flex-end;
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px;
+  border-radius: 15px;
+  color: var(--Beige);
+  font-family: 'Alice', serif;
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
+
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+
+  transition: all 0.35s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.success {
+  background-color: var(--Success);
+}
+
+.toast.error {
+  background-color: var(--Error);
+}
+
 .coordonnees {
   display: flex;
   flex-direction: column;
 
-  padding-top: 20px;
   gap: 10px;
   color: var(--Marron);
 }
@@ -40,7 +111,6 @@ section {
   text-justify: center;
 
   gap: 20px;
-  padding-top: 20px;
 }
 
 @media (min-width: 768px) {

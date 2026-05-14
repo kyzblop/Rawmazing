@@ -2,6 +2,7 @@ let index = 0;
 let actualites = [];
 const actualitesSection = document.getElementById("actualites-section");
 
+// Affichage de la navbar
 fetch("header.html")
   .then((res) => res.text())
   .then((data) => {
@@ -13,12 +14,14 @@ fetch("header.html")
     });
   });
 
+// Affichage du footer
 fetch("footer.html")
   .then((res) => res.text())
   .then((data) => {
     document.querySelector("#footer").innerHTML = data;
   });
 
+// Affichage du carrousel
 function afficherActualite(i) {
   const track = document.querySelector(".actualite-track");
   track.style.transform = `translateX(-${i * 100}%)`;
@@ -27,6 +30,7 @@ function afficherActualite(i) {
     actualites[i].message;
 }
 
+// Section actualité carrousel
 if (actualitesSection) {
   fetch("actualites.json")
     .then((res) => res.json())
@@ -56,14 +60,58 @@ if (actualitesSection) {
     });
 
   document.querySelector(".prev").addEventListener("click", () => {
-    console.log("prev cliqué, index actuel:", index);
     index = (index - 1 + actualites.length) % actualites.length;
-    console.log("nouvel index:", index);
     afficherActualite(index);
   });
 
   document.querySelector(".next").addEventListener("click", () => {
     index = (index + 1) % actualites.length;
     afficherActualite(index);
+  });
+}
+
+// Envois des mails via le site
+emailjs.init("OUVwD02cSZQluo8Bl");
+
+const contactForm = document.getElementById("contact-form");
+const toast = document.getElementById("toast");
+const submitBtn = document.getElementById("submit-btn");
+
+function showToast(message, type) {
+  toast.textContent = message;
+  toast.className = "toast show " + type;
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+}
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Système anti-bot
+    if (contactForm.website && contactForm.website.value) {
+      return; // On bloque l'envoi
+    }
+
+    // Système anti double envoi
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Envoi du message en cours";
+
+    emailjs
+      .sendForm("service_ww4egjn", "template_w5yrknh", contactForm)
+      .then(() => {
+        contactForm.reset();
+        showToast("Message envoyé avec succès !", "success");
+      })
+      .catch(() => {
+        showToast("Erreur, veuillez réessayer.", "error");
+      })
+      .finally(() => {
+      // Réactiver le bouton
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Envoyer";
+    });
   });
 }
