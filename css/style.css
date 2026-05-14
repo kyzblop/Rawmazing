@@ -7,6 +7,7 @@
 @import url("tarifs.css");
 @import url("partenaires.css");
 @import url("contact.css");
+@import url("mentions-legales.css");
 
 
 /* Global */
@@ -48,6 +49,16 @@ h3 {
   font-family: "Italianno", cursive;
   font-size: clamp(1rem, 10vw, 3rem);
   font-weight: 400;
+
+  color: var(--Marron);
+}
+
+h4 {
+  font-family: "Alice", cursive;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 100;
+  text-decoration: underline;
+  justify-self: flex-start;
 
   color: var(--Marron);
 }

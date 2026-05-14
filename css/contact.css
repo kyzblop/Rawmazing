@@ -8,16 +8,13 @@
   gap: 50px;
 }
 
-section {
+.section-formulaire,
+.section-coordonnes,
+.section-rdv {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-
-.section-formulaire,
-.section-coordonnes,
-.section-rdv {
   gap: 20px;
 }
 
@@ -64,7 +61,7 @@ section {
   padding: 15px;
   border-radius: 15px;
   color: var(--Beige);
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
   font-size: clamp(0.8rem, 4vw, 1.2rem);
 
   opacity: 0;
@@ -118,7 +115,9 @@ section {
     padding: 50px;
   }
 
-  section {
+  .section-formulaire,
+  .section-coordonnes,
+  .section-rdv {
     align-items: flex-start;
   }
 

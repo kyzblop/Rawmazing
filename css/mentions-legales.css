@@ -1,0 +1,15 @@
+.mentions-legales {
+  padding: 30px;
+  gap: 20px;
+}
+
+.paragraphe {
+  color: var(--Marron);
+
+  text-align: justify;
+}
+
+.paragraphe h4,
+.paragraphe h3 {
+  text-align: start;
+}
