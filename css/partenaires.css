@@ -1,7 +1,7 @@
 .partenaires {
   display: flex;
   flex-direction: column;
-  text-align: justify;
+  text-align: center;
 
   width: 100%;
 
