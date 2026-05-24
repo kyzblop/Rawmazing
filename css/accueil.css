@@ -215,7 +215,8 @@
 
   .doula img {
     width: 50%;
-    object-fit: contain;
-    align-self: center;
+    height: 100%;
+    align-self: stretch;
+    object-fit: cover;
   }
 }
