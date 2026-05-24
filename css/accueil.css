@@ -131,8 +131,7 @@
   color: var(--Marron);
 }
 
-.doula img {
-  width: 100%;
+.doula-avantage-image img {
   width: 100%;
   display: block;
 }
@@ -207,16 +206,17 @@
 
   .doula {
     flex-direction: row;
+    align-items: stretch;
   }
 
   .doula_content {
     padding: 100px;
+    width: 50%;
   }
 
-  .doula img {
+  .doula-avantage-image{
     width: 50%;
     height: 100%;
-    align-self: stretch;
     object-fit: cover;
   }
 }
