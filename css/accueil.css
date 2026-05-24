@@ -139,7 +139,6 @@
 @media (min-width: 768px) {
   .perso {
     flex-direction: row;
-
     gap: 20%;
     padding: 100px 10%;
   }
@@ -203,6 +202,10 @@
     padding: 80px;
     gap: 50px;
   }
+  
+  .hero-content h1 {
+    text-align: center;
+  }
 
   .doula {
     flex-direction: row;
@@ -211,11 +214,11 @@
 
   .doula_content {
     padding: 100px;
-    width: 50%;
+    flex : 1;
   }
 
   .doula-avantage-image{
-    width: 50%;
+    flex : 1;
     height: 100%;
     object-fit: cover;
   }
