@@ -133,6 +133,8 @@
 
 .doula img {
   width: 100%;
+  width: 100%;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -213,5 +215,7 @@
 
   .doula img {
     width: 50%;
+    object-fit: contain;
+    align-self: center;
   }
 }
