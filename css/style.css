@@ -80,6 +80,19 @@ a {
   border-radius: 50px;
   color: var(--Beige);
 
+  text-align: center;
+
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.btn-mid{
+  background-color: var(--Beige);
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: var(--Marron);
+
+  text-align: center;
+
   font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
@@ -88,6 +101,8 @@ a {
   padding: 10px 15px;
   border-radius: 50px;
   color: var(--Marron);
+
+  text-align: center;
 
   font-size: clamp(1rem, 4vw, 1.5rem);
 }
