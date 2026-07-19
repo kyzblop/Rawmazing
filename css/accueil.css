@@ -136,6 +136,54 @@
   display: block;
 }
 
+/* Avis */
+.avis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--BeigeFonce);
+
+  gap: 15px;
+
+  padding: 30px 5%;
+}
+
+.avis_content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 30px;
+  width: 100%;
+}
+
+.card_avis {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  min-width: 0;
+  flex-direction: column;
+
+  padding: 25px;
+
+  justify-content: center;
+  text-align: justify;
+
+  background-color: #faf2eb;
+  border-radius: 30px;
+
+  color: var(--Marron);
+  font-size: clamp(0.8rem, 4.8vw, 1.4rem);
+}
+
+.card_avis span {
+  text-align: end;
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   .perso {
     flex-direction: row;
@@ -202,7 +250,7 @@
     padding: 80px;
     gap: 50px;
   }
-  
+
   .hero-content h1 {
     text-align: center;
   }
@@ -214,12 +262,17 @@
 
   .doula_content {
     padding: 100px;
-    flex : 1;
+    flex: 1;
   }
 
-  .doula-avantage-image{
-    flex : 1;
+  .doula-avantage-image {
+    flex: 1;
     height: 100%;
     object-fit: cover;
+  }
+
+  .avis_content {
+    flex-direction: row;
+    justify-content: center;
   }
 }
