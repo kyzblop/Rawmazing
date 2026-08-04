@@ -1,0 +1,185 @@
+.doterra {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  width: 100%;
+
+  color: var(--Marron);
+}
+
+.doterra-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  gap: 50px;
+  padding: 20px 50px;
+
+  background-color: var(--BeigeFonce);
+}
+
+.doterra-titre span,
+.doterra-titre-2 span {
+  font-family: "Alice", cursive;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 100;
+  justify-self: flex-start;
+
+  color: var(--Marron);
+}
+
+.doterra-titre-2 {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.doterra-titre-2 img {
+  width: 150px;
+}
+
+.doterra-titre-3 {
+  text-align: justify;
+}
+
+.doterra-kit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  gap: 20px;
+}
+
+.doterra-kit-img {
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.doterra-kit-img img {
+  width: 100%;
+}
+
+.doterra-kit-text {
+  text-align: justify;
+  padding: 20px 50px;
+}
+
+.doterra-kit-huiles {
+  width: 100%;
+  padding: 20px 5px;
+  font-size: clamp(0.67rem, 2vw, 1rem);
+}
+
+.doterra-kit-huiles ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.doterra-kit-huiles li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.doterra-kit-huiles li span {
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.doterra-kit-huiles li img {
+  width: 25%;
+  object-fit: contain;
+}
+
+.doterra-kit-text-2 {
+  padding: 20px 50px;
+}
+
+.doterra-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  gap: 20px;
+  padding: 20px 50px;
+
+  background-color: var(--BeigeFonce);
+}
+
+.doterra-parent img {
+  width: 100%;
+}
+
+.doterra-parent-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.doterra-parent-2 {
+  text-align: justify;
+}
+
+.doterra-fertilite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.doterra-fertilite img {
+  width: 100%;
+}
+
+.doterra-fertilite-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.doterra-fertilite-2 {
+  text-align: justify;
+}
+
+.doterra-color-text {
+  color: var(--Signature);
+}
+
+.doterra-emotion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  gap: 20px;
+  padding: 20px 50px;
+
+  background-color: var(--BeigeFonce);
+}
+
+.doterra-emotion img {
+  width: 100%;
+}
+
+.doterra-emotion-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.doterra-emotion-2 {
+  text-align: justify;
+}
