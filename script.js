@@ -71,7 +71,9 @@ if (actualitesSection) {
 }
 
 // Envois des mails via le site
-emailjs.init("OUVwD02cSZQluo8Bl");
+if (typeof emailjs !== 'undefined') {
+  emailjs.init("OUVwD02cSZQluo8Bl");
+}
 
 const contactForm = document.getElementById("contact-form");
 const toast = document.getElementById("toast");

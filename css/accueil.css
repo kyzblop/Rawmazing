@@ -100,7 +100,7 @@
 
   justify-content: center;
 
-  background-color: #faf2eb;
+  background-color: var(--Blanc);
   border-radius: 30px;
 
   color: var(--Marron);
@@ -172,7 +172,7 @@
   justify-content: center;
   text-align: justify;
 
-  background-color: #faf2eb;
+  background-color: var(--Blanc);
   border-radius: 30px;
 
   color: var(--Marron);
@@ -184,7 +184,45 @@
   font-weight: bold;
 }
 
+/* doTERRA */
+
+.doterra-apercu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.doterra-apercu img {
+  width: 30%;
+  max-width: 200px;
+}
+
+.doterra-apercu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 30px;
+  width: 100%;
+  gap: 20px;
+}
+
+.doterra-apercu-container p {
+  color: var(--Marron);
+  text-align: justify;
+}
+
 @media (min-width: 768px) {
+  .perso p,
+  .doula p,
+  .doterra-apercu p {
+    line-height: 1.5;
+  }
+
   .perso {
     flex-direction: row;
     gap: 20%;
@@ -212,6 +250,35 @@
   .card_group {
     justify-content: center;
     gap: 50px;
+  }
+
+  .doterra-apercu {
+    flex-direction: row;
+    gap: 20%;
+    padding: 100px 10%;
+  }
+
+  .doterra-apercu img {
+    max-width: 350px;
+  }
+
+  .doterra-apercu-container {
+    padding: 0;
+    gap: 30px;
+  }
+
+  .doterra-apercu-container span {
+    font-family: "Alice", cursive;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-weight: 100;
+    justify-self: flex-start;
+
+    color: var(--Marron);
+  }
+
+  .doterra-apercu-container p {
+    color: var(--Marron);
+    text-align: justify;
   }
 }
 
