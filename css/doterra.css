@@ -44,32 +44,35 @@
   text-align: justify;
 }
 
-.doterra-kit {
+.doterra-enfant {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   width: 100%;
   gap: 20px;
-  padding: 20px 50px;
 }
 
-.doterra-kit-img {
+.doterra-enfant-2-image {
   width: 100%;
 }
 
-.doterra-kit-text {
+.doterra-enfant-2-text {
   text-align: justify;
 }
 
-.doterra-kit-huiles {
+.doterra-enfant-1 {
+  padding: 20px 50px;
+}
+
+.doterra-enfant-huiles {
   display: flex;
   width: 100%;
   padding: 20px 5px;
   font-size: clamp(0.67rem, 2vw, 1rem);
 }
 
-.doterra-kit-huiles ul {
+.doterra-enfant-huiles ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -77,24 +80,28 @@
   gap: 20px;
 }
 
-.doterra-kit-huiles li {
+.doterra-enfant-huiles li {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.doterra-kit-huiles li span {
+.doterra-enfant-huiles li span {
   flex: 1;
   text-align: center;
   white-space: nowrap;
 }
 
-.doterra-kit-huiles li img {
+.doterra-enfant-huiles li img {
   width: 25%;
   object-fit: contain;
 }
 
-.doterra-kit-text-2 {
+.doterra-enfant-2 {
+  padding: 20px 50px;
+}
+
+.doterra-enfant-text-2 {
   padding: 20px 50px;
 }
 
@@ -118,30 +125,53 @@
   background-color: var(--BeigeFonce);
 }
 
-.doterra-kit-img img,
+.doterra-enfant img,
 .doterra-famille img,
 .doterra-parent img,
 .doterra-emotion img,
 .doterra-fertilite img,
+.doterra-emotion img,
 .doterra-menopause img {
   width: 50%;
 }
 
 .doterra-famille-1,
+.doterra-enfant-1,
 .doterra-parent-1,
 .doterra-emotion-1,
 .doterra-fertilite-1,
+.doterra-emotion-1,
 .doterra-menopause-1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+.doterra-famille-1-intro,
+.doterra-enfant-1-intro,
+.doterra-parent-1-intro,
+.doterra-fertilite-1-intro,
+.doterra-emotion-1-intro,
+.doterra-menopause-1-intro {
+  text-align: justify;
+}
+
 .doterra-famille-2,
 .doterra-parent-2,
-.doterra-emotion-2,
 .doterra-fertilite-2,
+.doterra-emotion-2,
 .doterra-menopause-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.doterra-famille-2-text,
+.doterra-parent-2-text,
+.doterra-fertilite-2-text,
+.doterra-emotion-2-text,
+.doterra-menopause-2-text {
   text-align: justify;
 }
 
@@ -150,7 +180,7 @@
 }
 
 .doterra-famille-text-desktop,
-.doterra-kit-text-desktop,
+.doterra-enfant-text-desktop,
 .doterra-parent-text-desktop,
 .doterra-fertilite-text-desktop,
 .doterra-emotion-text-desktop,
@@ -158,7 +188,7 @@
   display: none;
 }
 
-.doterra-logo{
+.doterra-logo {
   background-color: var(--BeigeFonce);
 }
 
@@ -173,7 +203,7 @@
   }
 
   .doterra-famille-text-desktop,
-  .doterra-kit-text-desktop,
+  .doterra-enfant-text-desktop,
   .doterra-parent-text-desktop,
   .doterra-fertilite-text-desktop,
   .doterra-emotion-text-desktop,
@@ -182,7 +212,7 @@
   }
 
   .doterra-famille-text-mobile,
-  .doterra-kit-text-mobile,
+  .doterra-enfant-text-mobile,
   .doterra-parent-text-mobile,
   .doterra-fertilite-text-mobile,
   .doterra-emotion-text-mobile,
@@ -190,48 +220,34 @@
     display: none;
   }
 
-  .doterra-kit-1 {
-    display: flex;
-    flex-direction: row-reverse;
-
-    justify-content: space-between;
-
-    gap: 20px;
-    width: 100%;
-  }
-
-  .doterra-kit-img {
+  .doterra-enfant-image {
     width: fit-content;
   }
 
-  .doterra-kit-img img {
-    width: clamp(200px, 25vw, 600px);
-  }
-
-  .doterra-kit-text {
+  .doterra-enfant-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .doterra-kit-huiles {
+  .doterra-enfant-huiles {
     padding: 20px 50px;
     justify-content: center;
   }
 
-  .doterra-kit-huiles ul {
+  .doterra-enfant-huiles ul {
     width: fit-content;
   }
 
-  .doterra-kit-huiles ul li {
+  .doterra-enfant-huiles ul li {
     justify-content: space-between;
   }
 
-  .doterra-kit-huiles ul li img {
+  .doterra-enfant-huiles ul li img {
     width: clamp(100px, 25vw, 250px);
   }
 
-  .doterra-kit-text-2-prim {
+  .doterra-enfant-text-2-prim {
     display: flex;
     flex-direction: column;
 
@@ -239,7 +255,7 @@
     align-items: end;
   }
 
-  .doterra-kit-text-2 {
+  .doterra-enfant-text-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -247,45 +263,91 @@
   }
 
   .doterra-famille,
+  .doterra-enfant,
   .doterra-parent,
   .doterra-fertilite,
   .doterra-emotion,
   .doterra-menopause {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     width: 100%;
   }
 
-  .doterra-fertilite,
-  .doterra-menopause {
-    flex-direction: row-reverse;
-  }
-
-  .doterra-famille-1 img,
-  .doterra-parent-1 img,
-  .doterra-fertilite-1 img,
-  .doterra-emotion-1 img,
-  .doterra-menopause-1 img {
-    width: clamp(100px, 25vw, 200px);
-  }
-
   .doterra-famille-1,
-  .doterra-kit-img,
   .doterra-parent-1,
+  .doterra-emotion-1 {
+    text-align: start;
+    width: 100%;
+  }
+
+  .doterra-enfant-1,
   .doterra-fertilite-1,
-  .doterra-emotion-1,
   .doterra-menopause-1 {
-    width: 50%;
+    text-align: end;
+    width: 100%;
+  }
+
+  .doterra-famille-1-intro,
+  .doterra-enfant-1-intro,
+  .doterra-parent-1-intro,
+  .doterra-fertilite-1-intro,
+  .doterra-emotion-1-intro,
+  .doterra-menopause-1-intro {
+    line-height: 1.5;
+  }
+
+  .doterra-enfant-1-intro,
+  .doterra-fertilite-1-intro,
+  .doterra-menopause-1-intro {
+    text-align: end;
   }
 
   .doterra-famille-2,
-  .doterra-kit-text,
   .doterra-parent-2,
-  .doterra-fertilite-2,
-  .doterra-emotion-2,
-  .doterra-menopause-2 {
-    width: 50%;
+  .doterra-emotion-2 {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
     line-height: 1.5;
+  }
+
+  .doterra-enfant-2,
+  .doterra-fertilite-2,
+  .doterra-menopause-2 {
+    display: flex;
+    flex-direction: row-reverse;
+
+    gap: 20px;
+    line-height: 1.5;
+  }
+
+  .doterra-famille-2-image,
+  .doterra-enfant-2-image,
+  .doterra-parent-2-image,
+  .doterra-fertilite-2-image,
+  .doterra-emotion-2-image,
+  .doterra-menopause-2-image {
+    width: 50%;
+    text-align: center;
+  }
+
+  .doterra-famille-2-image img,
+  .doterra-enfant-2-image img,
+  .doterra-parent-2-image img,
+  .doterra-fertilite-2-image img,
+  .doterra-emotion-2-image img,
+  .doterra-menopause-2-image img {
+    width: clamp(100px, 25vw, 200px);
+  }
+
+  .doterra-famille-2-text,
+  .doterra-enfant-2-text,
+  .doterra-parent-2-text,
+  .doterra-fertilite-2-text,
+  .doterra-emotion-2-text,
+  .doterra-menopause-2-text {
+    width: 50%;
   }
 }
