@@ -339,13 +339,13 @@
     text-align: center;
   }
 
-  .doterra-famille-2-image img,
   .doterra-parent-2-image img,
   .doterra-fertilite-2-image img,
   .doterra-menopause-2-image img {
     width: clamp(100px, 25vw, 200px);
   }
 
+  .doterra-famille-2-image img,
   .doterra-enfant-2-image img,
   .doterra-emotion-2-image img {
     width: clamp(100px, 25vw, 350px);
